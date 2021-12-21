@@ -1,0 +1,9 @@
+<%= form_tag("/happy/view", :method => "get") do %>
+<<%= %>>
+<%= label_tag("Введите n:") %>
+<%= number_field_tag(:happynum) %> <br/><br/>
+<%= submit_tag("Найти счастливые") %>
+<% end %> 
+<%= form_tag("/happy/return_data_base", :method => "get") do %>
+<%= submit_tag 'return_data_base',class: "btn btn-primary btn-lg btn-block"%>
+<% end %>
